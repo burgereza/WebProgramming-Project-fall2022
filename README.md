@@ -2,6 +2,6 @@
 Sharif University Of Technology
 
 MEMBERS:
-    Hosein
+    Hossein Sobhi 97106081
     Danial
     Seyed Reza Ghamghaam - 99170542
