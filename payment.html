@@ -28,11 +28,11 @@
 
         <div class="position-sticky">
             <div class="list-group list-group-flush mx-3 mt-4">
-                <a href="index.html" class="list-group-item list-group-item-action py-2 ripple active"
-                    aria-current="true">
+                <a href="index.html" class="list-group-item list-group-item-action py-2 ripple">
                     <i class="fa-solid fa-house fa-fw me-3"></i><span>خانه</span>
                 </a>
-                <a href="payment.html" class="list-group-item list-group-item-action py-2 ripple">
+                <a href="payment.html" class="list-group-item list-group-item-action py-2 ripple active"
+                    aria-current="true">
                     <i class="fa-solid fa-ticket fa-fw me-3"></i><span>خرید بلیط</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
@@ -84,48 +84,54 @@
             خرید بلیط
         </div>
         <div class="col-md-11">
-        <hr class="form-line">
+            <hr class="form-line">
         </div>
-        <form method="POST" action="#" class="me-3">
-            <div class="row" style="margin-top: 7px;">
-                <div class="form-group col-md-5">
-                    <label for="city1">مبدا</label>
-                    <select class="form-control" id="city1" class="selectpicker" onchange="disable(2, true)">
-                        <option value="1">شهر ۱</option>
-                        <option value="2">شهر ۲</option>
-                        <option value="3">شهر ۳</option>
-                        <option value="4">شهر ۴</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-1 d-flex justify-content-center align-items-end">
-                    <div class="btn btn_red"><i class="fa-solid fa-right-left" onclick="switcher()"></i></div>
-                </div>
-                <div class="form-group col-md-5">
-                    <label for="city2">مقصد</label>
-                    <select class="form-control" id="city2" class="selectpicker" onchange="disable(1, true)">
-                        <option value="1">شهر ۱</option>
-                        <option value="2">شهر ۲</option>
-                        <option value="3">شهر ۳</option>
-                        <option value="4">شهر ۴</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 7px;">
-                <div class="form-group col-md-4">
-                    <label for="p-datepicker">تاریخ رفت</label>
-                    <div class="input-group" id="p-datepicker">
-                        <input type="text" class="form-control p-datepicker">
-                        <span class="input-group-text bg-white"><i class="fa fa-calendar"></i>
-                        </span>
+        <div class="row">
+            <div class="col-6">
+                <form method="POST" action="#" class="me-3">
+                    <div class="row" style="margin-top: 7px;">
+                        <div class="form-group col-md-5">
+                            <input type="text" class="form-control" placeholder="نام لاتین" for="latin_name">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <input type="text" class="form-control" placeholder="نام خانوادگی لاتین" for="latin_name">
+                        </div>
                     </div>
-                </div>
+                    <div class="row" style="margin-top: 7px;">
+                        <div class="form-group col-md-5">
+                            <input type="text" class="form-control" placeholder="نام فارسی" for="latin_name">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <input type="text" class="form-control" placeholder="نام خانوادگی فارسی" for="latin_name">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 7px;">
+                        <div class="col col-md-1">
+                            <button type="submit" class="btn btn-primary">مشاهده</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="row" style="margin-top: 7px;">
-                <div class="col col-md-1">
-                    <button type="submit" class="btn btn-primary">مشاهده</button>
-                </div>
+            <div class="col-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="test.webp" class="card-img-top" alt="testing">
+                    <div class="card-body">
+                      <h5 class="card-title">جزئیات سفر</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                  </div>
             </div>
-        </form>
+
+        </div>
     </div>
 </main>
 
