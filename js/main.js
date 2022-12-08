@@ -29,7 +29,7 @@ function disable(cityNumber, f) {
         for (z = 0; z < city1.length; z++) {
             city1[z].disabled = false;
         }
-        city1[option2 - 1].disabled = true;
+        city1[option2].disabled = true;
         if (f == true) {
             render(1);
         }
@@ -39,7 +39,7 @@ function disable(cityNumber, f) {
         for (z = 0; z < city2.length; z++) {
             city2[z].disabled = false;
         }
-        city2[option1 - 1].disabled = true;
+        city2[option1].disabled = true;
         if (f == true) {
             render(2);
         }
