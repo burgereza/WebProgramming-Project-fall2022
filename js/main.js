@@ -59,7 +59,8 @@ function render(cityNumber) {
     }
 }
  function handler(){
-    
+    let std = document.querySelector("#std");
+    std.innerHTML = "";
     // window.alert("فرم را پر کنید")
     for(let i =1; i<6;){
         cardmaker();
@@ -70,7 +71,7 @@ function render(cityNumber) {
 
  }
 function cardmaker(){
-    std = document.querySelector("#std");
+    let std = document.querySelector("#std");
     let div = document.createElement("div");
     div.style = "margin: 10px;";
     let div2 = document.createElement("div");
@@ -85,17 +86,22 @@ function cardmaker(){
     div2.append(div3);
     let h52 = document.createElement("h5");
     h52.classList.add("card-title");
-    h52.innerText = "Special title treatment";
+    h52.innerText = "هواپیمایی X";
     div3.append(h52);
     let p1 = document.createElement("p");
     p1.classList.add("card-text");
-    p1.innerText = "With supporting text below as a natural lead-in to additional content";
+    p1.innerText = "مشخصات سفر";
     div3.append(p1);
+    let a =document.createElement("a");
+    a.href = "./payment.html";
     let button = document.createElement("button");
+    button.onclick = "payment.html"
     button.classList.add("btn");
     button.classList.add("btn-primary");
-    button.innerText = "Go somewhere";
-    div3.append(button);
+    button.innerText = "خرید";
+    a.append(button);
+    div3.append(a);
+    
     std.append(div);
 
 }
