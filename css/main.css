@@ -49,3 +49,19 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+table {
+    font-family: sahel;
+    border-collapse: collapse;
+    width: 90%;
+  }
+  
+  td, th {
+    border: 2px solid #dddddd;
+    text-align: right;
+    padding: 12px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
