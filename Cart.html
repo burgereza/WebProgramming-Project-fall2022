@@ -28,11 +28,11 @@
 
         <div class="position-sticky">
             <div class="list-group list-group-flush mx-3 mt-4">
-                <a href="index.html" class="list-group-item list-group-item-action py-2 ripple active"
-                    aria-current="true">
+                <a href="index.html" class="list-group-item list-group-item-action py-2 ripple">
                     <i class="fa-solid fa-house fa-fw me-3"></i><span>خانه</span>
                 </a>
-                <a href="Cart.html" class="list-group-item list-group-item-action py-2 ripple">
+                <a href="Cart.html" class="list-group-item list-group-item-action py-2 ripple active"
+                    aria-current="true">
                     <i class="fa-solid fa-ticket fa-fw me-3"></i><span>سبد خرید</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
@@ -80,54 +80,14 @@
 
 <main style="margin-top: 70px;">
     <div class="container">
-        <div class="fs-4">
-            خرید بلیط
+        <div class="fs-2">
+            سبد خرید
         </div>
-        <div class="col-md-11">
-        <hr class="form-line">
+        <div class="row" style="margin-top: 7px;">
+            <div class="col col-md-1">
+                <button type="submit" class="btn btn-primary" style=" height: 40px;; width: 250px;">تایید و انتقال به درگاه پرداخت</button>
+            </div>
         </div>
-        <form method="POST" action="#" class="me-3">
-            <div class="row" style="margin-top: 7px;">
-                <div class="form-group col-md-5">
-                    <label for="city1">مبدا</label>
-                    <select class="form-control" id="city1" class="selectpicker" onchange="disable(2, true)">
-                        <option value="مبدا" class="place" selected disabled hidden > از کجا</option>
-                        <option value="1">شهر ۱</option>
-                        <option value="2">شهر ۲</option>
-                        <option value="3">شهر ۳</option>
-                        <option value="4">شهر ۴</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-1 d-flex justify-content-center align-items-end">
-                    <div class="btn btn_red"><i class="fa-solid fa-right-left" onclick="switcher()"></i></div>
-                </div>
-                <div class="form-group col-md-5">
-                    <label for="city2">مقصد</label>
-                    <select class="form-control" id="city2" class="selectpicker" onchange="disable(1, true)">
-                        <option value="مقصد" class="place" selected disabled hidden > به کجا</option>
-                        <option value="1">شهر ۱</option>
-                        <option value="2">شهر ۲</option>
-                        <option value="3">شهر ۳</option>
-                        <option value="4">شهر ۴</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 7px;">
-                <div class="form-group col-md-4">
-                    <label for="p-datepicker">تاریخ رفت</label>
-                    <div class="input-group" id="p-datepicker">
-                        <input type="text" class="form-control p-datepicker">
-                        <span class="input-group-text bg-white"><i class="fa fa-calendar"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 7px;">
-                <div class="col col-md-1">
-                    <button type="submit" class="btn btn-primary">مشاهده</button>
-                </div>
-            </div>
-        </form>
     </div>
 </main>
 
