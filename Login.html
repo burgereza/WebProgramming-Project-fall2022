@@ -31,8 +31,7 @@
                 <a href="index.html" class="list-group-item list-group-item-action py-2 ripple">
                     <i class="fa-solid fa-house fa-fw me-3"></i><span>خانه</span>
                 </a>
-                <a href="Cart.html" class="list-group-item list-group-item-action py-2 ripple active"
-                    aria-current="true">
+                <a href="Cart.html" class="list-group-item list-group-item-action py-2 ripple">
                     <i class="fa-solid fa-ticket fa-fw me-3"></i><span>سبد خرید</span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
@@ -80,14 +79,33 @@
 
 <main style="margin-top: 70px;">
     <div class="container">
-        <div class="fs-2">
-            سبد خرید
+        
+        <div class="col-md-11">
+            <hr class="form-line">
         </div>
-        <div class="row" style="margin-top: 7px;">
-            <div class="col col-md-1">
-                <button type="submit" class="btn btn-primary" style=" height: 40px;; width: 250px;">تایید و انتقال به درگاه پرداخت</button>
-            </div>
+        
+        <div class="col-6">
+            <form method="POST" action="#" class="me-0">
+                
+                <div class="row" style="margin-top: 7px;">
+                    <div class="form-group col-md-5">
+                        <input type="text" class="form-control" placeholder="نام کاربری">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 7px;">
+                    <div class="form-group col-md-5">
+                        <input type="text" class="form-control" placeholder="رمز عبور">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col col-md-1">
+                        <button type="submit" class="btn btn-primary" style=" height: 40px;; width: 227px;">ورود</button>
+                    </div>
+                </div>
+
+            </form>
         </div>
+
     </div>
 </main>
 
