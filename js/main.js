@@ -58,3 +58,12 @@ function render(cityNumber) {
         $('#city2').selectpicker('render');
     }
 }
+function handler(){
+    window.alert("Error")
+
+
+
+}
+ let x = document.querySelector("#submit");
+ console.log(x);
+//.addEventListener("click",handler);//
