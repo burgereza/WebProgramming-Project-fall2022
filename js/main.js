@@ -58,19 +58,18 @@ function render(cityNumber) {
         $('#city2').selectpicker('render');
     }
 }
- function handler(){
+
+function handler() {
     let std = document.querySelector("#std");
     std.innerHTML = "";
     // window.alert("فرم را پر کنید")
-    for(let i =1; i<6;){
+    for (let i = 1; i < 6;) {
         cardmaker();
-        i=i+1;
+        i = i + 1;
     }
-    
+}
 
-
- }
-function cardmaker(){
+function cardmaker() {
     let std = document.querySelector("#std");
     let div = document.createElement("div");
     div.style = "margin: 10px;";
@@ -92,7 +91,7 @@ function cardmaker(){
     p1.classList.add("card-text");
     p1.innerText = "مشخصات سفر";
     div3.append(p1);
-    let a =document.createElement("a");
+    let a = document.createElement("a");
     a.href = "./payment.html";
     let button = document.createElement("button");
     button.onclick = "payment.html"
@@ -101,7 +100,27 @@ function cardmaker(){
     button.innerText = "خرید";
     a.append(button);
     div3.append(a);
-    
+
     std.append(div);
 
+}
+
+function changeNumber(f) {
+    const passengerNumber = document.getElementById('passenger-number');
+    var pNum = parseInt(passengerNumber.value);
+    if (f == 0) {
+        passengerNumber.value = pNum - 1;
+    }
+    if (f == 1) {
+        passengerNumber.value = pNum + 1;
+    }
+    checkNumber();
+}
+
+function checkNumber() {
+    const passengerNumber = document.getElementById('passenger-number');
+    var pNum = parseInt(passengerNumber.value);
+    if(pNum <= 0) {
+        passengerNumber.value = 1;
+    }
 }
