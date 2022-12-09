@@ -58,12 +58,44 @@ function render(cityNumber) {
         $('#city2').selectpicker('render');
     }
 }
-function handler(){
-    window.alert("Error")
+ function handler(){
+    
+    // window.alert("فرم را پر کنید")
+    for(let i =1; i<6;){
+        cardmaker();
+        i=i+1;
+    }
+    
 
 
+ }
+function cardmaker(){
+    std = document.querySelector("#std");
+    let div = document.createElement("div");
+    div.style = "margin: 10px;";
+    let div2 = document.createElement("div");
+    div2.classList.add("card");
+    div.append(div2);
+    let h5 = document.createElement("h5");
+    h5.classList.add("card-header");
+    h5.innerText = "Featured";
+    div2.append(h5);
+    let div3 = document.createElement("div");
+    div3.classList.add("card-body");
+    div2.append(div3);
+    let h52 = document.createElement("h5");
+    h52.classList.add("card-title");
+    h52.innerText = "Special title treatment";
+    div3.append(h52);
+    let p1 = document.createElement("p");
+    p1.classList.add("card-text");
+    p1.innerText = "With supporting text below as a natural lead-in to additional content";
+    div3.append(p1);
+    let button = document.createElement("button");
+    button.classList.add("btn");
+    button.classList.add("btn-primary");
+    button.innerText = "Go somewhere";
+    div3.append(button);
+    std.append(div);
 
 }
- let x = document.querySelector("#submit");
- console.log(x);
-//.addEventListener("click",handler);//
